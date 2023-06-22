@@ -1,28 +1,3 @@
-const jogadores = [
-    {
-        nome: 'Alan',
-    },
-    {
-        nome: 'Cristian',
-    },
-    {
-        nome: 'BOT',
-    },
-    {
-        nome: 'Jean',
-    },
-    {
-        nome: 'Jeli',
-    },
-    {
-        nome: 'Markin',
-    },
-    {
-        nome: 'Ricardo',
-    },
-    {
-        nome: 'Muleta',
-    }
-];
+const jogadores = ['Alan', 'Bruno', 'Bot', 'Cristian', 'Jean', 'Jeli', 'Lucas', 'Marcos', 'Muleta', 'Ricardo'];
 
-module.exports = { jogadores };
+export default jogadores;

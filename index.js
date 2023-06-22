@@ -1,5 +1,6 @@
-const { jogadores } = require('./jogadores.js');
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8];
+import chalk from 'chalk';
+import jogadores from './jogadores.js';
+
 
 function shufle(arr, de, ate){
     let n = arr.length;
@@ -25,6 +26,11 @@ function trocaLugar(arr, iCurrent, iNext){
     return arr;
 }
 
+function montaTime(arr){
+    let redTeam = arr.slice(0, 5);
+    let blueTeam = arr.slice(5, arr.length);
 
+    return console.log(chalk.red(`Time Vermelho: ${redTeam}`) + chalk.blue(`\nTime Azul: ${blueTeam}`));
+}
 
-console.log(shufle(jogadores, 0, jogadores.length - 1));
+montaTime(shufle(jogadores, 0, jogadores.length - 1));
